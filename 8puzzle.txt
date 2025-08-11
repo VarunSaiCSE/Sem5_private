@@ -1,0 +1,32 @@
+The 8-Puzzle Problem is a classic puzzle where the objective is to move tiles around in a 3x3 grid to reach a goal state. The goal is usually to arrange the tiles in a specific order (e.g., the numbers 1 to 8, with the empty space at the bottom right). The puzzle is solved using a heuristic-based approach such as A Search*.
+
+A* Algorithm and Heuristic
+In the A* search algorithm, we use a combination of:
+
+g(n): The cost to reach a given state from the initial state (number of moves).
+
+h(n): The heuristic estimate of the cost from the current state to the goal state.
+
+We can use Manhattan Distance as the heuristic, which calculates the sum of the horizontal and vertical distances of each tile from its goal position.
+
+Steps of the A* Algorithm for the 8-Puzzle:
+Start from the initial state.
+
+For each state, calculate the total cost function f(n) = g(n) + h(n).
+
+Explore the state with the lowest f(n) value first.
+
+Repeat the process until the goal state is reached or no solution exists.
+
+Explanation:
+Manhattan Distance: The heuristic used to estimate the number of moves left to reach the goal state.
+
+A Search*:
+
+The search is carried out using a priority queue (min-heap) to explore the least costly path (f(n) = g(n) + h(n)).
+
+We keep track of visited states to avoid revisiting them.
+
+Interactive Input: The program prompts the user to enter the initial state of the puzzle, row by row, with space-separated numbers. The user must enter numbers from 0 to 8, where 0 represents the empty space.
+
+Goal State: The goal state is predefined as [1, 2, 3, 4, 5, 6, 7, 8, 0], which is the standard solved configuration.
