@@ -5,7 +5,6 @@ B = 'B'
 
 # Accumulated percept history
 percepts = []
-
 # Table mapping sequences of percepts to actions
 table = {
     ((A, 'clean'),): 'right',
