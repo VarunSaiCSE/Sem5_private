@@ -11,6 +11,7 @@ GOAL = ('C', 'C', True, True)
 def get_possible_actions(state):
     monkey, box, on_box, has_banana = state
     actions = []
+    
 
     if has_banana:
         return []
