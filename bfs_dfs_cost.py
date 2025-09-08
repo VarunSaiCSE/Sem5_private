@@ -14,6 +14,7 @@ unweighted_graph = {
 }
 
 # Weighted graph for UCS
+
 weighted_graph = {
     'A': [('B', 1), ('C', 4)],
     'B': [('D', 5), ('E', 1)],
