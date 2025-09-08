@@ -2,7 +2,6 @@
 
 #Enter LOCATION A/B in captial letters
 #Enter Status O/1 accordingly where 0 means CLEAN and 1 means DIRTY
-
 def vaccum_world():
         # initializing goal_state
         # 0 indicates Clean and 1 indicates Dirty
